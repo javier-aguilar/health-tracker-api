@@ -9,7 +9,7 @@ FactoryBot.define do
 
     factory(:profile) do
       association :user
-      height { Faker::Number.within(range: 1..10) }
+      height { Faker::Number.within(range: 1..400) }
       weight { Faker::Number.within(range: 1..400) }
       age { Faker::Number.within(range: 1..100) }
       gender { Faker::Gender.type }
