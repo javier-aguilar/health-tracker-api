@@ -14,7 +14,6 @@ FactoryBot.define do
       age { Faker::Number.within(range: 1..100) }
       gender { Faker::Gender.type }
       activity_level { Faker::Verb.base }
-      daily_calorie_intake { Faker::Number.within(range: 1..1000) }
     end
 
     factory(:food_log) do

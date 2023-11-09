@@ -8,7 +8,6 @@ RSpec.describe Profile, type: :model do
     it {should validate_presence_of :age}
     it {should validate_presence_of :gender}
     it {should validate_presence_of :activity_level}
-    it {should validate_presence_of :daily_calorie_intake}
   end
 
   describe 'relationships' do
