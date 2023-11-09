@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
 
   describe 'relationships' do
     it {should have_one :profile}
-    it {should have_one :food_log}
+    it {should have_many :food_log}
   end
 
   describe "attributes" do
@@ -20,4 +20,5 @@ RSpec.describe User, type: :model do
       expect(user).to be_valid
     end
   end
+
 end

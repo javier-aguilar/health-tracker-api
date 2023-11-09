@@ -5,5 +5,5 @@ class User < ApplicationRecord
     validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
 
     has_one :profile, dependent: :destroy
-    has_one :food_log, dependent: :destroy
+    has_many :food_log, dependent: :destroy
 end
