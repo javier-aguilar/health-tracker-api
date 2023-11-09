@@ -16,4 +16,12 @@ FactoryBot.define do
       activity_level { Faker::Verb.base }
       daily_calorie_intake { Faker::Number.within(range: 1..1000) }
     end
+
+    factory(:food_log) do
+      association :user
+      fat { Faker::Number.within(range: 1..400) }
+      carbs { Faker::Number.within(range: 1..400) }
+      protein { Faker::Number.within(range: 1..400) }
+      calories { Faker::Number.within(range: 1..10000) }
+    end
   end
